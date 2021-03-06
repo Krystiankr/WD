@@ -135,3 +135,11 @@ import wikipedia
 
 tekst = wikipedia.page("Guido van Rossum").content
 print(tekst[-100:].title())
+
+
+import math
+stopnie = 30
+
+rad = (stopnie * 2 * math.pi)/(360)
+
+print(math.sin(rad))
