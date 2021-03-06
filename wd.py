@@ -121,4 +121,11 @@ def kula(r):
     objetosc = (4/3) * math.pi * pow(r, 3)
     print("Pole powierzchni wynosi: %f, objetosc wynosi: %f"%(pole_powierzchni, objetosc))
 
+def rownanie_kwadratowe(a, b, c):
+    delta = pow(b,2)- 4 * a * c
+    x_1 = (pow(b,2)+delta)/ (2*a)
+    x_2 = (pow(b,2)-delta)/ (2*a)
+    print("x_1 wynosi %f, x_2 wynosi %f"%(x_1,x_2))
+rownanie_kwadratowe(1,2,1)
+
 
