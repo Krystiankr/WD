@@ -128,4 +128,9 @@ def rownanie_kwadratowe(a, b, c):
     print("x_1 wynosi %f, x_2 wynosi %f"%(x_1,x_2))
 rownanie_kwadratowe(1,2,1)
 
+import math
+from faker import Faker
+fake = Faker()
 
+losowy_text = fake.text()
+print("Dlugosc tekstu wynosi: %d"%len(losowy_text))
