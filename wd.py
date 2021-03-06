@@ -129,8 +129,15 @@ def rownanie_kwadratowe(a, b, c):
 rownanie_kwadratowe(1,2,1)
 
 import math
-from faker import Faker
-fake = Faker()
+import wikipedia
+#print(wikipedia.summary("Olsztyn").upper())
 
-losowy_text = fake.text()
-print("Dlugosc tekstu wynosi: %d"%len(losowy_text))
+tekst = wikipedia.page("Guido van Rossum").content
+
+print(tekst[-100:])
+
+import math
+import wikipedia
+
+tekst = wikipedia.page("Guido van Rossum").content
+print(tekst[-100:].title())
