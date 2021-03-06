@@ -45,30 +45,15 @@ print(wikipedia.page("Python").url)
 #print(wikipedia.page("Galapagos").content)
 ####
 zadanie 1 
-x = int(input("Podaj liczbe calkowita: "))
-y = int(input("Podaj liczbe calkowita: "))
+x = int(input("Podaj liczbe calkowita"))
+y = int(input("Podaj liczbe calkowita"))
 
 if (x%y==0):
-    print("%d jest podzielne przez %d"%(x, y))
+    print(f'Liczba {x} jest podzielna przez liczbe {y}')
 else:
-    print("%d nie jest podzielne przez %d"%(x,y))
-###
+    print(f'Liczba {x} nie jest podzielna przez liczbe {y}')
+#####
 zadanie 2
-import math
-
-def wyr_1(x, y ,z):
-    return pow((x+y/z),(x-z))
-
-def wyr_2(x, z):
-    if (pow(x,1/z)-pow(x,1/z))==0:
-        print("Nie dzielimy przez 0")
-    else:
-        return (pow(x,1/2)-pow(x,1/z))/(pow(x,1/z)-pow(x,1/z))
-
-print(wyr_2(1,2))
-
-import math
-
 def wyr_1(x, y ,z):
     return pow((x+y/z),(x-z))
 
