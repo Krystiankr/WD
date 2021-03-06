@@ -43,7 +43,8 @@ print(wikipedia.summary("Python"))
 print(wikipedia.page("Python").url)
 
 #print(wikipedia.page("Galapagos").content)
-
+####
+zadanie 1 
 x = int(input("Podaj liczbe calkowita: "))
 y = int(input("Podaj liczbe calkowita: "))
 
@@ -51,7 +52,8 @@ if (x%y==0):
     print("%d jest podzielne przez %d"%(x, y))
 else:
     print("%d nie jest podzielne przez %d"%(x,y))
-
+###
+zadanie 2
 import math
 
 def wyr_1(x, y ,z):
@@ -93,19 +95,20 @@ def wyr_6(x, y):
 
 def wyr_7(x,y):
     return math.log(x,y)
-
-zad 3
+#####
+zadanie 3
 import math
 import cmath
 z = cmath.sqrt(-1)
 print("Czesc urojona: %d, czesc rzeczywista: %d"%(z.imag, z.real))
-
+#####
+zadanie 4
 print(math.sin(15))
 print(math.sin(30))
 print(math.sin(45))
 print(math.sin(60))
-
-zad 5
+######
+zadanie 5
 def kolo(r):
     if r==0:
         print("Promien nie moze byc zerem")
@@ -113,29 +116,35 @@ def kolo(r):
     obwod = 2 * math.pi * r
     pole = math.pi * pow(r,2)
     print("Pole wynosi: %f, obwod wynosi: %f"%(obwod, pole))
-
+#####
+zadanie 6
 def kula(r):
     if r==0:
         print("Promien nie moze byc zerem")
     pole_powierzchni = 4 * math.pi * pow(r,2)
     objetosc = (4/3) * math.pi * pow(r, 3)
     print("Pole powierzchni wynosi: %f, objetosc wynosi: %f"%(pole_powierzchni, objetosc))
-
+#####
+zadanie 7
 def rownanie_kwadratowe(a, b, c):
     delta = pow(b,2)- 4 * a * c
     x_1 = (pow(b,2)+delta)/ (2*a)
     x_2 = (pow(b,2)-delta)/ (2*a)
     print("x_1 wynosi %f, x_2 wynosi %f"%(x_1,x_2))
 rownanie_kwadratowe(1,2,1)
-
+#####
+zadanie 8
+from faker import Faker
+fake = Faker()
+losowy_text = fake.text()
+print("Dlugosc tekstu wynosi: %d"%len(losowy_text))
+#####
+zadanie 9
 import math
 import wikipedia
-#print(wikipedia.summary("Olsztyn").upper())
-
-tekst = wikipedia.page("Guido van Rossum").content
-
-print(tekst[-100:])
-
+print(wikipedia.summary("Olsztyn").upper())
+####
+zadanie 10
 import math
 import wikipedia
 
