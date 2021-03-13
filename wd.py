@@ -143,3 +143,29 @@ stopnie = 30
 rad = (stopnie * 2 * math.pi)/(360)
 
 print(math.sin(rad))
+########
+zadanie 1 lab 3
+from typing import Set
+
+s: Set[int] = set()
+
+while (len(s)<=10):
+
+    s.add(int(input('Podaj liczbe')))
+
+print(s)
+####
+zadanie 2
+
+from typing import List
+
+li: List[int] = []
+
+while True:
+    tmp = int(input('Podaj liczbe: '))
+    if (tmp in li):
+        break
+    else:
+        li.append(tmp)
+
+print(li)
