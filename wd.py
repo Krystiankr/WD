@@ -169,3 +169,67 @@ while True:
         li.append(tmp)
 
 print(li)
+####
+from typing import List
+
+li: List[List[int]] = []
+
+for i in range(4):
+    tmp: List[int] = []
+    for j in range(4):
+        if j == i:
+            tmp.append(1)
+        else:
+            tmp.append(0)
+    li.append(tmp)
+
+for el in li:
+    print(el)
+
+####
+zadanie 4
+from typing import List
+
+li: List[List[int]] = []
+
+value: int = 0
+
+for i in range(0,4):
+    tmp: List[int] = []
+    for j in range(0,4):
+        tmp.append(0)
+    li.append(tmp)
+
+for i in range(0,4):
+    for j in range(0,4):
+        if (j==i):
+            li[j][i] = 0
+        else:
+            li[j][i] = value
+        value += 1
+print(li)
+####
+zadanie 5
+from typing import Dict
+
+dc: Dict[str, str] = {
+    'one': 'jeden',
+    'two': 'dwa',
+    'three': 'trzy'
+}
+tmp: str = 't'
+tmp = input('Podaj slowo: ')
+
+while(tmp != 'end'):
+    if tmp in dc:
+        print(f'Tlumaczenie slowa {tmp} to: {dc[tmp]}')
+    else:
+        ang: str = input('Podaj tlumaczenie tego slowa: ')
+        dc[tmp] = ang
+        print(f'Dodalem slowo {tmp} z tlumaczeniem: {ang}')
+    tmp = input('Podaj slowo: ')
+
+print(dc)
+
+
+
