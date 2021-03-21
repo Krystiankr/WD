@@ -261,5 +261,35 @@ def foo(a: int, b: int, c: int) -> float:
 
 print(foo(1,2,1))
 ##zadanie 4
+def foo(*args: int) -> int:
+    min = args[0]
+    if len(args) > 1:
+        for el in args:
+            if min > el:
+                min = el
+    return min
+print(foo(1,-10,3, -3, 5))
 
+#zadanie 5
+def foo(*args: str) -> str:
+    max = args[0]
+    if len(args) > 1:
+        for el in args:
+            if len(max) < len(el):
+                max = el
+    return max
 
+print(foo('Ala', 'ma', 'kotaaa'))
+
+#zadanie 6
+def foo(*args: int) -> float:
+    suma = 0
+    ilosc = 0
+    for el in args:
+        suma += el
+        ilosc += 1
+    return suma/ilosc
+
+print(foo(1,2,3))
+
+#zadanie 7
