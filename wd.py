@@ -231,5 +231,35 @@ while(tmp != 'end'):
 
 print(dc)
 
+#### LAB 4
+##zadanie 1
+
+def foo(x: int, y: int, operator: str) -> int:
+    if operator == '+':
+        return x+y
+    elif operator == '-':
+        return x-y
+
+print(foo(1,2,'-'))
+
+##zadanie 2
+import math
+
+def foo(x0: int, y0: int, x1: int, y1: int) -> float:
+    return math.sqrt((x0-x1) ** 2 + (y0-y1) ** 2)
+
+print(foo(1,1,2,2))
+
+##zadanie 3
+import math
+
+def foo(a: int, b: int, c: int) -> float:
+    sqrt_delta = math.sqrt(b ** 2 - 4 * a * c)
+    x1 = (-b - sqrt_delta) / (2 * a)
+    x2 = (-b + sqrt_delta) / (2 * a)
+    return (x1,x2)
+
+print(foo(1,2,1))
+##zadanie 4
 
 
