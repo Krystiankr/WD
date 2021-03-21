@@ -242,7 +242,7 @@ def foo(x: int, y: int, operator: str) -> int:
 
 print(foo(1,2,'-'))
 
-##zadanie 2
+##zadanie 2 pierwiastek z sumy kwadratow roznicy
 import math
 
 def foo(x0: int, y0: int, x1: int, y1: int) -> float:
@@ -272,7 +272,7 @@ print(foo(1,-10,3, -3, 5))
 
 #zadanie 5
 def foo(*args: str) -> str:
-    max = args[0]
+    max: int = args[0]
     if len(args) > 1:
         for el in args:
             if len(max) < len(el):
