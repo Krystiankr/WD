@@ -10,16 +10,12 @@ def prime_number() -> Generator[int, None, None]:
             prev = 0
         elif (licznik == 1):
             print(f"F{licznik}: 1")
-
             next = 1
         else:
-
             tmp = prev + next
             prev = next
             next = tmp
             print(f"F{licznik}: {tmp}")
-
-
         licznik += 1
 if __name__ == "__main__":
     generator: Generator[int, None, None] = prime_number()
