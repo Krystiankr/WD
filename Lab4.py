@@ -1,3 +1,21 @@
+##Zadanie 12
+from typing import Generator
+
+
+def artithmetic_progression(n: int) -> Generator[int, None, None]:
+    ciag = 0
+    while True:
+        yield ciag
+        ciag = 3 * n - 7
+        n += 1
+
+
+if __name__ == "__main__":
+    generator: Generator[int, None, None] = artithmetic_progression(4)
+    
+    for x in range(15):
+        print(next(generator))
+
 ##Zadanie 13
 from typing import Generator
 def prime_number() -> Generator[int, None, None]:
