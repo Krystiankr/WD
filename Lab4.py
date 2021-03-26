@@ -1,3 +1,18 @@
+##Zadanie 11
+from typing import Generator
+
+
+def even_numbers(n: int) -> Generator[int, None, None]:
+    while True:
+        yield n
+        n += 2
+
+
+if __name__ == "__main__":
+    generator: Generator[int, None, None] = even_numbers(10)
+    for x in range(10):
+        print(next(generator))
+        
 ##Zadanie 12
 from typing import Generator
 
