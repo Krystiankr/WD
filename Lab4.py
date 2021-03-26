@@ -1,3 +1,26 @@
+##Zadanie 9
+from typing import Generator
+import math
+
+def Palindrome(word: str) -> bool:
+    n = len(word)
+
+    if n % 2 == 0:
+        for el in range(0,(math.ceil((n-1)/2))):
+            if word[el] != word[n-1-el]:
+                return False
+    else:
+        for el in range(0, int((n-1)/2)):
+            if word[el] != word[n-1-el]:
+                return False
+    return True
+
+if __name__ == "__main__":
+    slowo = "00141005"
+    if Palindrome(slowo):
+        print(f"Slowo: {slowo} jest palindromem!")
+    else:
+        print(f"Slowo: {slowo} nie jest palindromem.")
 ##Zadanie 11
 from typing import Generator
 
