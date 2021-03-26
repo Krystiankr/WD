@@ -56,6 +56,24 @@ def foo(*args: int) -> float:
     return suma/ilosc
 
 print(foo(1,2,3))
+#Zadanie 8
+from typing import List
+
+
+def lista(listaa: List[int]) -> [List, List]:
+    lista_p = []
+    lista_np = []
+    for el in listaa:
+        if el % 2 == 0:
+            lista_p.append(el)
+        else:
+            lista_np.append(el)
+    return lista_p, lista_np
+
+
+if __name__ == "__main__":
+    main_list = [1, 2, 3, 692, 1, 123]
+    print(f"Lista parzysta: {lista(main_list)[0]}, Lista nieparzysta: {lista(main_list)[1]}")
 
 ##Zadanie 9
 from typing import Generator
