@@ -26,14 +26,20 @@ def foo(a: int, b: int, c: int) -> float:
 
 print(foo(1,2,1))
 ##Zadanie 4
-def foo(*args: int) -> int:
-    min = args[0]
-    if len(args) > 1:
-        for el in args:
-            if min > el:
-                min = el
-    return min
-print(foo(1,-10,3, -3, 5))
+from typing import List
+
+
+def foo(x: List[int]) -> int:
+    el_min: int = int('inf')
+    
+    for number in x:
+        if number < el_min:
+            el_min = number
+    return el_min
+
+
+print(foo([1, 2, -12, -20]))
+
 
 #Zadanie 5
 def foo(*args: str) -> str:
