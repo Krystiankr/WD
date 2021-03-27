@@ -98,6 +98,33 @@ if __name__ == "__main__":
         print(f"Slowo: {slowo} jest palindromem!")
     else:
         print(f"Slowo: {slowo} nie jest palindromem.")
+##Zadanie 10
+from typing import List, Any
+
+
+def typy(*args) -> List[List[Any]]:
+    lista_string = []
+    lista_int = []
+    lista_float = []
+    lista_tuples = []
+    lista_set = []
+
+    for el in args:
+        if isinstance(el, str):
+            lista_string.append(el)
+        elif isinstance(el, int):
+            lista_int.append(el)
+        elif isinstance(el, float):
+            lista_float.append(el)
+        elif isinstance(el, tuple):
+            lista_tuples.append(el)
+        elif isinstance(el, set):
+            lista_set.append(el)
+    return [lista_int, lista_float, lista_string, lista_tuples, lista_set]
+
+
+if __name__ == "__main__":
+    print(typy(3, 2.2, "eee", (2, 12, 42), {35}, {1, 45, 199}, "dom"))
 ##Zadanie 11
 from typing import Generator
 
